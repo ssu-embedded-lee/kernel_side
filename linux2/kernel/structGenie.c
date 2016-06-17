@@ -211,7 +211,7 @@ int writeLoadFile(void)
 void initStruct(struct device_Genie *node,const char *name)
 {
 	int i,j;
-	node->dev_state = DEVICE_OFF;
+	node->dev_state = 0;
 	strcpy(node->dev_name,name);
 	for(i=0;i<NUM_TOKEN;i++) for(j=0;j<TOKEN_LEN;j++) node->dev_token[i][j] = '\0';
 	strcpy(node->dev_token[0],"켜");
